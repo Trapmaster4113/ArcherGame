@@ -30,25 +30,25 @@ Vision: See the tiles around you (Orange)
 Shop: Buy as many items as you can afford and hold in your item slots (Yellow)
 Tunnel: Go to the corresponding Tunnel tile (Maroonish idk)
 
-Items:
-Arrows:
-Infinity Arrow: Shoot an arrow in any direction until the board ends (Only hits 1 person) (3G)
-Plunder Arrow:	Shoots like a regular arrow, steals 3G if it hits someone (3G)
-Push Arrow:	Shoots like a regular arrow, if someone is hit, move them in any direction (2G)
-TP Arrow: Shoots like a regular arrow, target hit will be teleported to a random location (2G)
-Hawkshot: Choose any line of the board and reveal all tiles and any players there (3G)
-Sova Dart:	Choose any 7 hexagon (regular hexagon) area and reveal all tiles and any players there (3G)
-Arrow: Normal Arrow (1G)
-Bows: 
-Grappling Hook: Shoot an arrow at a nearby square up to 3 moves away and move there (2G)
-Long Bow: Extra Range on shot (2G)
-Fast Bow: Can shoot but doesn't end turn (2G)
-Airstrike: Can shoot any square on the board + Arrows do double damage (5G)
-Random Items:						
-Shield	Activable, blocks any shots for 2 turns (3G)
-Random TP	Tp to a random tile (1G)
-Swap two Tiles	Swap any two tiles (2G)
-Trap	Leave trap on an adacient tile, if someone walks on it, you steal 2gG	(2G)
-Health Pot	Heals 2 health (1G_
-Running Shoes	Move an additional Tile (2G)
+Items:\n
+Arrows:\n
+Infinity Arrow: Shoot an arrow in any direction until the board ends (Only hits 1 person) (3G)\n
+Plunder Arrow:	Shoots like a regular arrow, steals 3G if it hits someone (3G)\n
+Push Arrow:	Shoots like a regular arrow, if someone is hit, move them in any direction (2G)\n
+TP Arrow: Shoots like a regular arrow, target hit will be teleported to a random location (2G)\n
+Hawkshot: Choose any line of the board and reveal all tiles and any players there (3G)\n
+Sova Dart:	Choose any 7 hexagon (regular hexagon) area and reveal all tiles and any players there (3G)\n
+Arrow: Normal Arrow (1G)\n
+Bows: \n
+Grappling Hook: Shoot an arrow at a nearby square up to 3 moves away and move there (2G)\n
+Long Bow: Extra Range on shot (2G)\n
+Fast Bow: Can shoot but doesn't end turn (2G)\n
+Airstrike: Can shoot any square on the board + Arrows do double damage (5G)\n
+Random Items:						\n
+Shield	Activable, blocks any shots for 2 turns (3G)\n
+Random TP	Tp to a random tile (1G)\n
+Swap two Tiles	Swap any two tiles (2G)\n
+Trap	Leave trap on an adacient tile, if someone walks on it, you steal 2gG	(2G)\n
+Health Pot	Heals 2 health (1G)\n
+Running Shoes	Move an additional Tile (2G)\n
 
