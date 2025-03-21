@@ -1,34 +1,50 @@
 Link to images and stuff: https://docs.google.com/presentation/d/1ZVvXzbvkv_QF_ViFBRhXDzadH4PH5MDiwStuWMtXjM0/edit?usp=sharing
 Still in early development (working out rules and stuff so everything is subject to change)
 Rules
+
 Every player spawns at a separate spawn location with 3 hearts, 10 gold, and 5 arrows.
+
 Shooting players gains a point
+
 Getting hit by players loses a heart
+
 When run out of hearts you return to your spawn and lose a point
+
 Players can move 1-2 tiles per turn and then shoot if wanted
+
 Players can use items whenever they want
+
 Players cannot see the colored board or where any other players are
+
 First to 10 points win
+
 Tiles:
+
 Walls: Cannot cross/pass through (White)
 Empty: Nothing happens (Gray)
 Good Spaces
  - Treasure: Gain 3 Gold (Gold)
  - Reload: Gain 3 Arrows (Brownish)
  - Heal: Gain 1 HP (Lime Green)
+ - 
 Bad Space ¼ (Red)
  - Lose 3 Gold
  - Lose 3 Arrows
  - Lose 1 Item
  - Lose 1 Heart
-Chance Space ¼ (Purple
+ - 
+Chance Space ¼ (Purple)
  - Steal 2 Gold
  - Steal 2 Arrows
  - Give 2 Gold
  - Give 2 Arrows
+
 Vision: See the tiles around you (Orange)
+
 Shop: Buy as many items as you can afford and hold in your item slots (Yellow)
+
 Tunnel: Go to the corresponding Tunnel tile (Maroonish idk)
+
 
 Items:
 
