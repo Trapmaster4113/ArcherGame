@@ -26,7 +26,7 @@ Good Spaces
  - Treasure: Gain 3 Gold (Gold)
  - Reload: Gain 3 Arrows (Brownish)
  - Heal: Gain 1 HP (Lime Green)
- - 
+
 Bad Space ¼ (Red)
  - Lose 3 Gold
  - Lose 3 Arrows
