@@ -82,7 +82,7 @@ Random TP	Tp to a random tile (1G)
 
 Swap two Tiles	Swap any two tiles (2G)
 
-Trap	Leave trap on an adacient tile, if someone walks on it, you steal 2gG	(2G)
+Trap	Leave trap on an adacient tile, if someone walks on it, they lose 1 health	(2G)
 
 Health Pot	Heals 2 health (1G)
 
