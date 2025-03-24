@@ -2,30 +2,13 @@
 import random
 import turtle
 import math
-
-'''
-spawn = 1 (4 total)
-good: * 18 (6 each)
- - treasure = 2.1
- - heal = 2.2
- - reload = 2.3
-bad = 3 (8 total)
-chance = 4 (6 total)
-tunnels (4 total) 2 each
- - tunnel 1 = 5.1
- - tunnel 2 = 5.2
-random = 6 (6 total)
-shop = 7 (4 total)
-empty = 8 (10 total)
-wall = 0 (21 total)
-'''
 def getMax(l):
     m = -1
     for i in l:
         if i > m:
             m = i
     return m
-def findSpawns(l):
+def findSpawns(l1,l):
     if len(l) == 9:
         s1,s2,s3,s4=[0,0],[0,0],[0,0],[0,0]
         half = math.ceil((len(l)-1)/2)
@@ -39,7 +22,22 @@ def findSpawns(l):
                 s[i][1] = random.randint(0,math.floor(l[s[i][0]]/2))
             else:
                 s[i][1] = random.randint(math.ceil(l[s[i][0]]/2),l[s[i][0]]-1)
-
+        #print(s)
+        #print(l1)
+        for j in range(4):
+            while l1[s[j][0]][s[j][1]] == 0:
+                if j == 0:
+                    s[j][0] = random.randint(0,half)
+                    s[j][1] = random.randint(0,math.floor(l[s[i][0]]/2))
+                if j == 1:
+                    s[j][0] = random.randint(0,half)
+                    s[i][1] = random.randint(math.ceil(l[s[i][0]]/2),l[s[i][0]]-1)
+                if j == 2:
+                    s[j][0] = random.randint(half,len(l)-1)
+                    s[i][1] = random.randint(0,math.floor(l[s[i][0]]/2))
+                if j == 3:
+                    s[j][0] = random.randint(half,len(l)-1)
+                    s[i][1] = random.randint(math.ceil(l[s[i][0]]/2),l[s[i][0]]-1)
     return s1,s2,s3,s4
 def grayBoard(l3,l4):
     s = turtle.Screen()
@@ -58,34 +56,6 @@ def grayBoard(l3,l4):
             #print(k, j0)
             j = l3[k][j0]
             t.pendown()
-            '''
-            if j == 1:
-                t.fillcolor("cyan")
-            if j == 2.1:
-                t.fillcolor("gold")
-            if j == 2.2:
-                t.fillcolor("sienna")
-            if j == 2.3:
-                t.fillcolor("lime")
-            if j == 3:
-                t.fillcolor("red")
-            if j == 4:
-                t.fillcolor("purple")
-            if j == 5.1:
-                t.fillcolor("maroon")
-            if j == 5.2:
-                t.fillcolor("dark red")
-            if j == 5.3:
-                t.fillcolor("peru")
-            if j == 5.4:
-                t.fillcolor("firebrick")
-            if j == 6:
-                t.fillcolor("orange")
-            if j == 7:
-                t.fillcolor("yellow")
-            if j == 8:
-                t.fillcolor("gray")
-            #'''
             if j == 0:
                 t.fillcolor("white")
             else:
@@ -104,16 +74,6 @@ def grayBoard(l3,l4):
                 t.left(75)
                 counts+=1
                 t.down()
-            '''
-            if [k,j0] in spawns:
-                t.right(150)
-                t.color("cyan")
-                t.width(10)
-                t.circle(25)
-                t.left(150)
-                t.color("black")
-                t.width(1)
-            #'''
             t.penup()
             t.left(90)
             t.forward(40)
@@ -151,9 +111,9 @@ def masterBoard(l3,l4):
             if j == 2.1:
                 t.fillcolor("gold")
             if j == 2.2:
-                t.fillcolor("sienna")
-            if j == 2.3:
                 t.fillcolor("lime")
+            if j == 2.3:
+                t.fillcolor("sienna")
             if j == 3:
                 t.fillcolor("red")
             if j == 4:
@@ -161,15 +121,15 @@ def masterBoard(l3,l4):
             if j == 5.1:
                 t.fillcolor("maroon")
             if j == 5.2:
-                t.fillcolor("dark red")
+                t.fillcolor("firebrick")
             if j == 5.3:
                 t.fillcolor("peru")
             if j == 5.4:
-                t.fillcolor("firebrick")
+                t.fillcolor("dark red")
             if j == 6:
                 t.fillcolor("orange")
             if j == 7:
-                t.fillcolor("yellow")
+                t.fillcolor("royal blue")
             if j == 8:
                 t.fillcolor("gray")
             if j == 0:
@@ -211,8 +171,24 @@ def masterBoard(l3,l4):
                     b-= 20
                 a+=40
                 t.goto(a,b)
+'''
+spawn = 1 (4 total)
+good: * 18 (6 each)
+ - treasure = 2.1
+ - heal = 2.2
+ - reload = 2.3
+bad = 3 (8 total)
+chance = 4 (6 total)
+tunnels (4 total) 2 each
+ - tunnel 1 = 5.1
+ - tunnel 2 = 5.2
+random = 6 (6 total)
+shop = 7 (4 total)
+empty = 8 (10 total)
+wall = 0 (21 total)
+'''
 #l0 = [16,4,8,8,8,6,6,2,2,2,2,8,12,15]
-l0=[12,0,4,4,4,3,3,2,2,8,9,10]
+l0=[15,0,5,5,0,5,5,2,2,6,10,6]
 #l01 = [0,1,2.1,2.2,2.3,3,4,5.1,5.2,5.3,5.4,6,7,8]
 l01 = [0,1,2.1,2.2,2.3,3,4,5.1,5.2,6,7,8]
 l = []
@@ -244,7 +220,6 @@ l22 = [l.count(0),l.count(1),l.count(2.1),l.count(2.2),l.count(2.3),l.count(3),
 l3 = []
 l4 = [5,6,7,8,9,8,7,6,5]
 #l4=[6,7,8,9,10,11,10,9,8,7,6]
-spawns=findSpawns(l4)
 counter=0
 for z in l4:
     x = []
@@ -255,6 +230,7 @@ for z in l4:
 #print(l3)
 #print(len(l))
 #print(l2)
+spawns=findSpawns(l3,l4)
 d = {}
 d[0] = 0
 d[1] = 0
@@ -284,6 +260,6 @@ for w in range(len(l3)):
     d[7] += l3[w].count(7)
     d[8] += l3[w].count(8)
 grayBoard(l3,l4)
+#print(l3)
 masterBoard(l3,l4)
 #'''
-
